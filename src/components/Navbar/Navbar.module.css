@@ -1,0 +1,19 @@
+.navLink {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.activeNavLink {
+    font-weight: bold;
+    color: orange;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-right: 1px solid gray;
+    height: 100%;
+}

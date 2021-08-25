@@ -1,0 +1,10 @@
+.addBookForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fieldItem {
+    margin-right: 10px;
+}
