@@ -1,9 +1,11 @@
-import {useDispatch, useSelector} from "react-redux"
+import {useDispatch, useSelector} from "react-redux";
+
 import {signOutThC} from "../../redux/authReducer";
 import {AppStateType} from "../../redux/reduxStore";
 
-export const Header = () => {
+import s from './Header.module.css';
 
+export const Header = () => {
   const dispatch = useDispatch();
 
   const onSignOut = () => {
@@ -14,14 +16,7 @@ export const Header = () => {
   const isAuth = useSelector((state: AppStateType) => state.auth.isAuth);
 
   return (
-    <div style={{
-      height: '50px',
-      background: 'orange',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      padding: '15px'
-    }}>
+    <div className={s.header}>
       {isAuth
         ? <p><b>Name:</b> {userName}</p>
         : <p>This is header</p>}

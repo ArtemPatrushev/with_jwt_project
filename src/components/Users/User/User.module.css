@@ -1,0 +1,10 @@
+.user {
+    display: flex;
+    width: 80%;
+    height: auto;
+    background: lightblue;
+    border: 1px solid darkblue;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
